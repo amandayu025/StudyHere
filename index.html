@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Study Here</title>
+</head>
+<body>
+    <h1>Study Here</h1>
+    <section>
+        <div id="timer">
+            <h2>Focus Timer</h2>
+            <div id="options">
+                <button id="work" class="timer-buttons" onclick="setWork()">Work (25 min)</button>
+                <button id="sBreak" class="timer-buttons" onclick="setShortBreak()">Short Break (5 min)</button>
+                <button id="lBreak" class="timer-buttons" onclick="setLongBreak()">Long Break (15 min)</button>
+            </div>
+            <div id="display">25:00</div>
+            <div id="control" >
+                <button id="start-pause" onclick="start_stop()"></button>
+                <button id="reset" class="timer-buttons" onclick="reset()">Reset</button>
+            </div>
+        </div>
+        <div id="tasks">
+            <h2>Tasks</h2>
+            <input type="text" id="task-input" placeholder="Add a new task...">
+            <button id="add-task" onclick="addtask()">Add Task</button>
+            <ul id="task-list"></ul>
+        </div>
+        <div id="playlist">
+            <h2>Study Playlist</h2>
+            <iframe data-testid="embed-iframe" style="border-radius:20px"  src="https://open.spotify.com/embed/playlist/7AosBgRNGgyGUDU9qJ0J7g?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
