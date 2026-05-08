@@ -25,5 +25,5 @@ It has a task list, a focus timer and a playlist created by me ^o^
 2. Pause or continue the timer by clicking at the button right bellow the display.
 3. Reset the timer by clicking on the "reset" button.
 
-### Playlist
-
+## AI use
+I used for debugging and learning some JS concepts.
